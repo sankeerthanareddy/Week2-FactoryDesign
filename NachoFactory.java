@@ -1,12 +1,14 @@
+package com.Abstract.DesignPattern;
+
 public class NachoFactory {
     public Nacho serveNacho (String type) {
         Nacho nacho = null;
 
         if (type.equals("Tostitos Baked Scoops")){
-            nacho = new TostitosNacho();
+        	TostitosNacho nacho1 = new TostitosNacho();
         }
         else if (type.equals("Santitas Tortilla")){
-            nacho = new SantitasNacho();
+        	SantitasNacho    nacho2 = new SantitasNacho();
         }
         return nacho;
     }
